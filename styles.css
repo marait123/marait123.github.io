@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #575757;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #f4f4f4;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#about {
+    margin-top: 10px;
+    background: #e6f7ff;
+}
+
+#profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#experience {
+    background: #fff7e6;
+}
+
+#projects {
+    background: #f9e6ff;
+}
+
+#skills {
+    background: #e6ffe6;
+}
+
+#contact {
+    background: #fff0f0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #0073e6;
+}
+
+h2 {
+    color: #ff6600;
+}
+
+h3 {
+    color: #6600cc;
+}
+
+.job, .project {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.project1 {
+    background: #e6f7ff;
+}
+
+.project2 {
+    background: #fff7e6;
+}
+
+.project3 {
+    background: #f9e6ff;
+}
+
+.project4 {
+    background: #e6ffe6;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: #f2f2f2;
+    border: 1px solid #ccc;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.skill:nth-child(odd) {
+    background: #e6f7ff;
+}
+
+.skill:nth-child(even) {
+    background: #fff7e6;
+}
+
+.skill:hover {
+    background: #d9d9d9;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    .skills-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        padding: 10px 15px;
+    }
+
+    .job, .project {
+        padding: 15px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
